@@ -79,8 +79,8 @@ function Nav() {
                         </ul>
 
                         <div className="gap-4 md:gap-12 items-center hidden md:hidden lg:flex">
-                            <div className="flex gap-2 items-center hover:text-[#00754a] transition-colors">
-                                <FaLocationDot className="text-[18px] md:text-[21px] hover:text-[#00754a] transition-colors" />
+                            <div className="flex cursor-pointer gap-2 items-center hover:text-[#00754a] transition-colors">
+                                <FaLocationDot className="text-[18px]  md:text-[21px] hover:text-[#00754a] transition-colors" />
                                 <h1 className="text-[11px] md:text-[13px] font-[600]">Find a store</h1>
                             </div>
 

@@ -1,5 +1,6 @@
+import { MdOutlineStarPurple500 } from "react-icons/md";
 
-
+ 
 const Rewards = () => {
     return (
         <div>
@@ -33,7 +34,6 @@ const Rewards = () => {
 
             {/* getting section start */}
             <h1 className="text-3xl font-bold text-center mt-16 md:mt-32 mb-4">Getting started is easy</h1>
-
             <p className="text-center">Earn Stars and get rewarded in a few easy steps.</p>
 
             <div className=" grid grid-cols-1 md:flex items-center mt-7 md:mt-16 justify-around md:w-[90%] mx-auto text-center gap-10 p-2 md:gap-20">
@@ -61,9 +61,46 @@ const Rewards = () => {
                     <h3 className="text-2xl font-bold">Earn Stars, get Rewards</h3>
                     <p>As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
                 </div>
-                
+
             </div>
-        </div>
+            {/* getting section end */}
+
+            {/* favourite drinks start */}
+            <div>
+                {/* header section */}
+                <div className="bg-[#f1f8f5] p-2">
+                <h1 className="text-3xl font-bold mt-10 md:mt-24  py-16 text-center">Get your favorites for free</h1>
+                <p className="text-3xl space-x-3 md:space-x-14 text-center flex justify-center items-center">
+                    <span className="flex items-center">25<MdOutlineStarPurple500  className="text-xs md:text-xl text-orange-400" /></span>
+                    <span className="flex items-center">100<MdOutlineStarPurple500 className="text-xs md:text-xl text-orange-400" /></span>
+                    <span className="flex items-center">200<MdOutlineStarPurple500 className="text-xs md:text-xl text-orange-400" /></span>
+                    <span className="flex items-center">300<MdOutlineStarPurple500 className="text-xs md:text-xl text-orange-400" /></span>
+                    <span className="flex items-center">400<MdOutlineStarPurple500 className="text-xs md:text-xl text-orange-400" /></span>
+                </p>
+                </div>
+
+                {/* drinks details section */}
+                <div className="bg-[#d4e9e2] ">
+                   <div className="grid grid-cols-1 text-center md:text-start md:flex items-center w-full md:w-1/2 mx-auto py-10">
+                     {/* img div */}
+                     <div>
+                        <img src="img/drinks.png" alt="" />
+                    </div>
+
+                    {/* text div */}
+                    <div className="space-y-8">
+                        <h1 className="text-2xl font-bold mt-14 md:mt0">Customize your drink</h1>
+                        <p className="font-bold">Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup.</p>
+                    </div>
+                   </div>
+                </div>
+
+            </div>
+            {/* favourite drinks end */}
+
+            
+
+            </div>
     );
 };
 
