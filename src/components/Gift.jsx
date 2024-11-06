@@ -1,9 +1,9 @@
-// import React from 'react'
+import React from 'react'
 
-// function Gift() {
-//   return (
-//     <div>Gift</div>
-//   )
-// }
+function Gift() {
+  return (
+    <div>Gift</div>
+  )
+}
 
-// export default Gift
+export default Gift

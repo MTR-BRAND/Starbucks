@@ -4,8 +4,11 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMenuSharp } from "react-icons/io5";
 import { HiXMark } from "react-icons/hi2";
 import Home from './Home';
+import Rewards from './Rewards';
 import Menu from './Menu'
-import Rewards from './Rewards'
+import Gift from './Gift'
+
+
 
 function Nav() {
     const [mDown1, setDown1] = useState("hidden");
@@ -132,10 +135,5 @@ function Nav() {
     );
 }
 
-
-
-function Gift() {
-    return <h1>Gift</h1>;
-}
 
 export default Nav;
