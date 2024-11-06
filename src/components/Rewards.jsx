@@ -198,8 +198,8 @@ const Rewards = () => {
               </div>
 
               {/* img */}
-              <div className="my-4">
-                <img src="img/moneyHero.png" alt="" />
+              <div className="my-4 w-full">
+                <img className="w-full object-cover" src="img/moneyHero.png" alt="" />
               </div>
 
               {/* question section */}
