@@ -4,6 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMenuSharp } from "react-icons/io5";
 import { HiXMark } from "react-icons/hi2";
 import Home from './Home';
+// import Gift from "./Gift"
 
 function Nav() {
     const [mDown1, setDown1] = useState("hidden");
