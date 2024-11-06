@@ -198,7 +198,7 @@ const Rewards = () => {
               </div>
 
               {/* img */}
-              <div className="my-4">
+              <div className="my-4 w-full object-cover">
                 <img src="img/moneyHero.png" alt="" />
               </div>
 
