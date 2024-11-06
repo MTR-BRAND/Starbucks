@@ -5,6 +5,7 @@ import { IoMenuSharp } from "react-icons/io5";
 import { HiXMark } from "react-icons/hi2";
 import Home from './Home';
 import Menu from './Menu'
+import Rewards from './Rewards'
 
 function Nav() {
     const [mDown1, setDown1] = useState("hidden");
