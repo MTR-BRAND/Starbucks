@@ -4,7 +4,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMenuSharp } from "react-icons/io5";
 import { HiXMark } from "react-icons/hi2";
 import Home from './Home';
-// import Gift from "./Gift"
 
 function Nav() {
     const [mDown1, setDown1] = useState("hidden");
@@ -80,8 +79,8 @@ function Nav() {
                         </ul>
 
                         <div className="gap-4 md:gap-12 items-center hidden md:hidden lg:flex">
-                            <div className="flex gap-2 items-center hover:text-[#00754a] transition-colors">
-                                <FaLocationDot className="text-[18px] md:text-[21px] hover:text-[#00754a] transition-colors" />
+                            <div className="flex cursor-pointer gap-2 items-center hover:text-[#00754a] transition-colors">
+                                <FaLocationDot className="text-[18px]  md:text-[21px] hover:text-[#00754a] transition-colors" />
                                 <h1 className="text-[11px] md:text-[13px] font-[600]">Find a store</h1>
                             </div>
 
@@ -133,9 +132,6 @@ function Menu() {
     return <h1>Menu</h1>;
 }
 
-function Rewards() {
-    return <h1>Rewards</h1>;
-}
 
 function Gift() {
     return <h1>Gift</h1>;
