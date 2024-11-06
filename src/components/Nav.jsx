@@ -4,6 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMenuSharp } from "react-icons/io5";
 import { HiXMark } from "react-icons/hi2";
 import Home from './Home';
+import Menu from './Menu'
 
 function Nav() {
     const [mDown1, setDown1] = useState("hidden");
@@ -47,9 +48,9 @@ function Nav() {
     return (
         <>
             <Router>
-                <header className="w-full h-[100px] overflow-hidden bg-white shadow-md relative">
+                <header className="w-full h-[100px] overflow-hidden bg-white shadow-md relative z-10">
                     <nav className="w-full h-[100px] flex gap-4 md:gap-9 items-center px-4 md:px-[40px] justify-between">
-                        <ul className="h-full flex items-center gap-4 md:gap-9">
+                        <ul className="h-full flex items-center gap-4 md:gap-9 text-[#212121]">
                             <NavLink to="/">
                                 <li onClick={hendlmenu4} className="list-none">
                                     <img src="img/logo.png" alt="" className="w-[40px] md:w-[50px]" />
@@ -64,18 +65,20 @@ function Nav() {
                             </div>
 
                             <div className="flex-col justify-center items-center relative h-full md:hidden lg:flex hidden">
+                                <li onClick={hendlmenu3} className="text-[12px] md:text-[14px]  font-bold uppercase hover:text-[#00754a] transition-colors">
+                                    <NavLink to="/rewards">Rewards</NavLink>
+                                </li>
+                                <div className={`down ${mDown3}`}></div>
+                            </div>
+
+                            
+                            <div className="flex-col justify-center items-center relative h-full md:hidden lg:flex hidden">
                                 <li onClick={hendlmenu2} className="text-[12px] md:text-[14px] font-bold uppercase hover:text-[#00754a] transition-colors">
                                     <NavLink to="/gift">Gift Cards</NavLink>
                                 </li>
                                 <div className={`down ${mDown2}`}></div>
                             </div>
 
-                            <div className="flex-col justify-center items-center relative h-full md:hidden lg:flex hidden">
-                                <li onClick={hendlmenu3} className="text-[12px] md:text-[14px]  font-bold uppercase hover:text-[#00754a] transition-colors">
-                                    <NavLink to="/rewards">Rewards</NavLink>
-                                </li>
-                                <div className={`down ${mDown3}`}></div>
-                            </div>
                         </ul>
 
                         <div className="gap-4 md:gap-12 items-center hidden md:hidden lg:flex">
@@ -101,7 +104,7 @@ function Nav() {
                 </header>
 
                 {/* Sidebar for mobile menu */}
-                <div className={`fixed top-0 left-0 w-full h-full bg-white text-black transition-transform duration-300 ${isMenuOpen ? '-translate-x-0' : 'translate-x-full'}`}>
+                <div className={`z-10 fixed top-0 left-0 w-full h-full bg-white text-black transition-transform duration-300 ${isMenuOpen ? '-translate-x-0' : 'translate-x-full'}`}>
                 <HiXMark onClick={toggleMenu} className="text-[30px] cursor-pointer absolute right-10 top-10" />
                     <div className="flex flex-col items-start justify-center h-full px-10">
                         <NavLink to="/menu" className="text-[18px] font-bold mb-4 hover:text-[#00754a]" onClick={toggleMenu}>Menu</NavLink>
@@ -128,9 +131,6 @@ function Nav() {
     );
 }
 
-function Menu() {
-    return <h1>Menu</h1>;
-}
 
 
 function Gift() {
