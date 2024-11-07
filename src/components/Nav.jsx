@@ -4,6 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMenuSharp } from "react-icons/io5";
 import { HiXMark } from "react-icons/hi2";
 import Home from './Home';
+import GiftCards from './GiftCards';
 
 function Nav() {
     const [mDown1, setDown1] = useState("hidden");
@@ -120,7 +121,7 @@ function Nav() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/menu" element={<Menu />} />
-                    <Route path="/gift" element={<Gift />} />
+                    <Route path="/gift" element={<GiftCards />} />
                     <Route path="/rewards" element={<Rewards />} />
                 </Routes>
             </Router>

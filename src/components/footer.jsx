@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FaSpotify } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa6";
