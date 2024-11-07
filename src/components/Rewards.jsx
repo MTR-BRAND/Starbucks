@@ -260,7 +260,6 @@ const Rewards = () => {
                         </div>
                     </div>
             </div>
-
             </div>
     );
 };
