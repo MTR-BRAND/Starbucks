@@ -198,13 +198,8 @@ const Rewards = () => {
               </div>
 
               {/* img */}
-<<<<<<< Updated upstream
-              <div className="my-4 w-full object-cover">
-                <img src="img/moneyHero.png" alt="" />
-=======
               <div className="my-4 w-full object-fill">
                 <img src="img/moneyHero.png" alt="" className="w-full" />
->>>>>>> Stashed changes
               </div>
 
               {/* question section */}
@@ -265,11 +260,7 @@ const Rewards = () => {
                         </div>
                     </div>
             </div>
-<<<<<<< Updated upstream
-            <Footer></Footer>
-=======
 
->>>>>>> Stashed changes
             </div>
     );
 };
